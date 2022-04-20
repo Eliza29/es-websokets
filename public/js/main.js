@@ -57,14 +57,12 @@ formPublicarMensaje.addEventListener('submit', e => {
 })
 
 socket.on('mensajes', mensajes => {
-    console.log(mensajes, 'mensajes cliente')
     makeHtmlList(mensajes)
 })
 
 
  function makeHtmlList(mensajes) {
     const messages= mensajes
-    console.log(messages, 'messages')
     const html = messages.map((mensaje) => {
         return (`<div class="message-css"><strong>${mensaje.username}</strong><span>[${mensaje.dateString} ${mensaje.time}]</span>:<em>${mensaje.mensaje}</em></div>`)
     }).join(" ");
