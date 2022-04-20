@@ -1,0 +1,22 @@
+h1 {
+    color: blue;
+}
+
+label {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.jumbotron {
+    min-height: 100vh;
+}
+
+.message-css strong{
+    color: blue;
+}
+.message-css em{
+    color: green;
+}
+.message-css span{
+    color: brown;
+}
